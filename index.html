@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Classroom X</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase.js"></script>
+  <script src="main.js"></script>
+  <script src="/model/user.js"></script>
+  <script src="/model/post.js"></script>
+  <script src="/model/reply.js"></script>
+  <script src="/view/replyUI.js"></script>
+  <script src="/view/postUI.js"></script>
+</head>
+
+<body>
+
+  <div id="postsContainer" class="postsContainer">
+  </div>
+
+  <div class="title addDropShadowDown">
+    <h1>Classroom X</h1>
+  </div>
+
+  <div id="newPostBtn" class="newPostBtn addButtomDropShadow">
+    <i class="material-icons md-36">
+      add
+    </i>
+  </div>
+
+  <div id="postingContainer" class="postingContainer addDropShadowTop">
+    <h1>Posting</h1>
+    <input type="text" id="titleTxt" placeholder="Title">
+    <textarea placeholder="Body" id="bodyTxt" cols="30" rows="10"></textarea>
+    <button id="postBtn" class="postBtn">Post</button>
+    <button id="cancelPostBtn" class="cancelPostBtn">Cancel</button>
+    <div id="editableButtonsContainer" class="editableButtonsContainer">
+      <button id="updateBtn" class="postBtn">Update</button>
+      <!-- <button id="deleteBtn" class="deleteBtn">Delete</button> -->
+      <button id="cancelBtn" class="cancelPostBtn">Cancel</button>
+    </div>
+  </div>
+
+</body>
+
+</html>
